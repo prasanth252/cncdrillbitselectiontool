@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNC DRILLBIT SELECTOR</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>CNC DRILLBIT SELECTOR</h1>
+  </div>
+
+  <div class="container">
+    <h3>Materials Guide:</h3>
+    <table>
+      <tr>
+        <th>Code</th>
+        <th>Material Type</th>
+      </tr>
+      <tr><td>P</td><td>Steel</td></tr>
+      <tr><td>M</td><td>Stainless Steel</td></tr>
+      <tr><td>K</td><td>Cast Iron</td></tr>
+      <tr><td>N</td><td>Non-Ferrous Materials</td></tr>
+      <tr><td>S</td><td>High-Temp Alloys</td></tr>
+    </table>
+
+    <p>Enter Material, Hole Dia (e.g.: P,1.0):</p>
+    <input type="text" id="inputField" placeholder="Enter material">
+    <button id="searchButton">Search</button>
+    <button id="resetButton">Reset</button>
+
+    <div id="outputSection">
+      <h3>Output:</h3>
+      <div id="outputArea">Enter a material to see the output.</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Designed by <strong>Prasanth</strong> under the esteemed guidance of <strong>Mr. Rajesh Guntur</strong> (Distinguished Assistant Professor)</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="sheet.js"></script>
+</body>
+</html>
